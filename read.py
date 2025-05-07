@@ -1,3 +1,12 @@
-import cv2 as cv2
+import cv2 as cv
 
-img = cv.imread("Photos/cat.jpg")
+# Reading Photos
+
+img = cv.imread("Photos/cat_large.jpg")
+
+cv.imshow("Cat", img)
+
+# Reading Videos
+
+cv.waitKey(0)
+
