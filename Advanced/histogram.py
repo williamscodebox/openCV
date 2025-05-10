@@ -16,15 +16,15 @@ masked = cv.bitwise_and(img,img,mask=mask)
 cv.imshow('Mask', masked)
 
 # Grayscale histogram
-gray_hist = cv.calcHist([gray], [0], mask, [256], [0,256] )
+gray_hist = cv.calcHist([gray], [0], None, [256], [0,256] ) # switch None out with mask to run histogram on masked img
 
-# # plt.figure()
-# # plt.title('Grayscale Histogram')
-# # plt.xlabel('Bins')
-# # plt.ylabel('# of pixels')
-# # plt.plot(gray_hist)
-# # plt.xlim([0,256])
-# # plt.show()
+plt.figure()
+plt.title('Grayscale Histogram')
+plt.xlabel('Bins')
+plt.ylabel('# of pixels')
+plt.plot(gray_hist)
+plt.xlim([0,256])
+plt.show()
 
 # # Colour Histogram
 
