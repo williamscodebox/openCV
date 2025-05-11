@@ -8,7 +8,7 @@ for i in os.listdir(r'C:\Users\panda\Repos\openCV\Photos\Faces'):
     p.append(i)
     
 print(p)
-# DIR = r'..Photos\Faces\'
+# DIR = r'C:\Users\panda\Repos\openCV\Photos\Faces'
 
 # haar_cascade = cv.CascadeClassifier('haarFace.xml')
 
