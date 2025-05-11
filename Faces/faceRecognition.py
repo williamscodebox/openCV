@@ -1,7 +1,7 @@
 import numpy as np
 import cv2 as cv
 
-haar_cascade = cv.CascadeClassifier('haar_face.xml')
+haar_cascade = cv.CascadeClassifier('haarFace.xml')
 
 people = ['Ben Afflek', 'Elton John', 'Jerry Seinfield', 'Madonna', 'Mindy Kaling']
 # features = np.load('features.npy', allow_pickle=True)
